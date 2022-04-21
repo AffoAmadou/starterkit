@@ -1,0 +1,47 @@
+.row {
+    display: flex;
+    align-items: center;
+    &.space-between {
+      justify-content: space-between;
+    }
+    &.center {
+      justify-content: center;
+    }
+  }
+
+
+main {
+    .container {
+      position: relative;
+      .row {
+        height: 100vh;
+        align-items: center;
+        .image-container {
+          position: relative;
+          .thumbnail {
+            overflow: hidden;
+            position: relative;
+            .frame {
+              img {
+                width: 100%;
+              }
+            }
+          }
+          .information {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-transform: uppercase;
+            .location {
+              span:nth-child(2) {
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
